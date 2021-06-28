@@ -50,12 +50,6 @@ footer {
     text-align: center;
 }
 
-#logo {
-    height: 15px !important;
-    width: 15px !important;
-    border-radius: 50% !important;
-}
-
 .active {
     color: black !important;
 }
