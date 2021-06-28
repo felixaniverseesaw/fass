@@ -10,8 +10,8 @@ h1 {
   text-align: center;
 }
 
-head, body {
-  top: 16px;
+body {
+  margin-top: 16px;
 }
 
 button {
