@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 a:visited {
-  color: #ffff88
+  color: #ffff88;
 }
 
 body {
@@ -28,7 +28,6 @@ button {
     font-weight: bold;
     padding: 12px 28px;
     text-align: center !important;
-}
 }
 
 button:hover {
