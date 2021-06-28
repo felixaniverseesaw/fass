@@ -8,6 +8,10 @@ h1 {
     text-align: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
 body {
     margin-top: 50px;
 }
@@ -52,6 +56,10 @@ footer {
     width: 100%;
 }
 
+.invisible {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
 .headline {
     text-align: center;
 }
@@ -69,4 +77,8 @@ footer {
     height: 22px;
     width: 22px !important;
     margin-top: 0px;
+}
+
+#bkgrnd {
+  background-image: url(https://cdna.artstation.com/p/assets/images/images/008/876/484/large/sin-lee-20170511-sonatine-little.jpg?1515842656);
 }

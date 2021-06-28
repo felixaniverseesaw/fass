@@ -1,5 +1,7 @@
 <html>
 
+<div id="bkgrnd">
+
 <head>
 	<title>felix_aniver_see_saw</title>
 	<link rel="stylesheet" href="code/style.css">
@@ -41,7 +43,7 @@ document.getElementById("time").innerHTML = "last updated: " + currentdate.getDa
 
 	<div></div>
 
-	<h3>[LIMITED!] download the audio!</h3>
+	<h3 class="invisible">[LIMITED!] download the audio!</h3>
 	<audio controls>
 		<source src="latest.mp3" type="audio/mpeg"/>
 		oofie :( looks like you can't play it...
@@ -49,7 +51,7 @@ document.getElementById("time").innerHTML = "last updated: " + currentdate.getDa
 
 	<div></div>
 
-	<h3>check out another video of mine!</h3>
+	<h3 class="invisible">check out another video of mine!</h3>
 	<iframe id="myframe" src="https://www.youtube.com/embed/wqJwADqE7Tg" style="border:0px #ffffff none;"
 		name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen width=100%
 		height=85%>
@@ -80,4 +82,7 @@ document.getElementById("time").innerHTML = "last updated: " + currentdate.getDa
 	const videos = ["https://www.youtube.com/embed/HihsrMzi-rU&t=6s", "https://www.youtube.com/embed/8XhO9KF1PcM", "https://www.youtube.com/embed/D1qugoVOE5M"]
 	document.getElementById("myframe").src = videos[Math.floor(Math.random() * 3)];
 </script>
+
+</div>
+
 </html>
