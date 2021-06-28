@@ -19,8 +19,19 @@
 	  <a class="active" href="index.html">home</a>
 	  <a href="videos.html">videos</a>
 	  <a href="about.html">about</a>
-	  <a href="gg.gg/subtofelix">subscribe!</a>
+	  <a href="https://www.youtube.com/channel/UCkXep4_jjjfAbeAqZJ5JshA?sub_confirmation=1">subscribe!</a>
+    <a id = "time" align = right>insert time</a>
 	</div>
+
+<script>
+var currentdate = new Date(); 
+document.getElementById("time").innerHTML = "last updated: " + currentdate.getDate() + "/"
+                + (currentdate.getMonth()+1)  + "/" 
+                + currentdate.getFullYear() + " "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();;
+                </script>
 
 	<h3>watch my latest video!</h3>
 	<iframe src="https://www.youtube.com/embed/wqJwADqE7Tg" style="border:0px #ffffff none;" name="myiFrame"
@@ -38,16 +49,16 @@
 
 	<div></div>
 
-	<script>
-		const videos = ["https://www.youtube.com/embed/HihsrMzi-rU&t=6s", "https://www.youtube.com/embed/8XhO9KF1PcM", "https://www.youtube.com/embed/D1qugoVOE5M"]
-		document.getElementById("myframe").src = videos[Math.floor(Math.random() * 3)];
-	</script>
-
 	<h3>check out another video of mine!</h3>
 	<iframe id="myframe" src="https://www.youtube.com/embed/wqJwADqE7Tg" style="border:0px #ffffff none;"
 		name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen width=100%
 		height=85%>
 	</iframe>
+
+  <script>
+		const videos = ["https://www.youtube.com/embed/HihsrMzi-rU&t=6s", "https://www.youtube.com/embed/8XhO9KF1PcM", "https://www.youtube.com/embed/D1qugoVOE5M"]
+		document.getElementById("myframe").src = videos[Math.floor(Math.random() * 3)];
+	</script>
 
 	<div></div>
 
