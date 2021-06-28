@@ -1,4 +1,1 @@
-# website
-## Description
---- description here ---
-### nothing important
+FASS is a small website used to advertise felix_aniver_see_saw's YouTube channel and also for an assignment for school. 
