@@ -21,6 +21,9 @@ button {
     padding: 12px 28px;
 }
 
+button:hover {
+    cursor: pointer;
+}
 .btn {
 	text-align: center;
 }
