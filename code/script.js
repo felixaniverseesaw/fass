@@ -7,10 +7,10 @@ $(function() {
 
 document.getElementsByClassName("active").disabled = true;
 
-var d = new Date();
-document.getElementById("time").innerHTML = d.getDate() + "/"
-                + (d.getMonth() + 1)  + "/" 
-                + d.getFullYear() + " @ "  
-                + d.getHours() + ":"  
-                + d.getMinutes() + ":" 
-                + d.getSeconds();
+var date = new Date();
+document.getElementById("time").innerHTML = date.getDate() + "/"
+                + (date.getMonth() + 1)  + "/" 
+                + date.getFullYear() + " @ "  
+                + date.getHours() + ":"  
+                + date.getMinutes() + ":" 
+                + date.getSeconds();
