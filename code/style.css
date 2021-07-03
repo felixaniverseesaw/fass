@@ -87,3 +87,7 @@ footer {
 #bkgrnd {
   background-image: url(https://cdna.artstation.com/p/assets/images/images/008/876/484/large/sin-lee-20170511-sonatine-little.jpg?1515842656);
 }
+
+#time {
+    float: right;
+}
