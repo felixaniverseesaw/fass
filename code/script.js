@@ -11,4 +11,6 @@ var date = new Date();
 document.getElementById("time").innerHTML = date.getDate() + "/"
                 + (date.getMonth() + 1)  + "/" 
                 + date.getFullYear() + " @ "  
-                + date.toLocaleTimeString();
+                + date.getHours() + ":"  
+                + date.getMinutes() + ":" 
+                + date.getSeconds();
