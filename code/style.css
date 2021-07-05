@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 a:visited {
-  color: #ffff88;
+    color: #ffff88;
 }
 
 body {
@@ -36,7 +36,7 @@ button:hover {
 }
 
 .btn {
-	text-align: center !important;
+    text-align: center !important;
 }
 
 .topnav {
@@ -64,7 +64,7 @@ footer {
 }
 
 .invisible {
-  background-color: rgba(128, 128, 128, 0.5);
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .headline {
