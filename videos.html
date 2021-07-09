@@ -28,15 +28,15 @@
 		<script>
 			var currentdate = new Date();
 			function addZero(x) {
-				if (x.toString.length = 1) {
+				if (x.toString.length === 1) {
 					return "0" + x.toString;
 				} else {
 					return x.toString;
 				}
 			}
-			hours = addZero(currentdate.getHours())
-			minutes = addZero(currentdate.getMinutes())
-			seconds = addZero(currentdate.getSeconds())
+			hours = addZero(currentdate.getHours());
+			minutes = addZero(currentdate.getMinutes());
+			seconds = addZero(currentdate.getSeconds());
 			document.getElementById("time").innerHTML = "last updated: " + currentdate.getDate() + "/"
 				+ (currentdate.getMonth() + 1) + "/"
 				+ currentdate.getFullYear() + " "
@@ -63,7 +63,7 @@
 		<h3 class="invisible">check out another of my videos!</h3>
 		<iframe id="myframe" src="https://www.youtube.com/embed/wqJwADqE7Tg" style="border:0px #ffffff none;"
 			name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen
-			width=100% height=85%>
+			width="100%" height="85%">
 		</iframe>
 
 		<div></div>
