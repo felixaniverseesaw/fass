@@ -54,5 +54,4 @@ document.getElementById("time").innerHTML = date.getDate() + " "
 	month + " "
 	date.getFullYear() + " @ " +
 	date.getHours() + ":" +
-	date.getMinutes() + ":" +
-	date.getSeconds();
+	date.getMinutes();
