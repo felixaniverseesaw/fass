@@ -92,4 +92,6 @@ footer {
 
 #time {
 	float: right;
+	padding-right: 1.5%;
+	color: white;
 }

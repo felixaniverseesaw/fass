@@ -1,94 +1,133 @@
 <!DOCTYPE html>
 <html>
+	<div id="bkgrnd">
+		<head>
+			<title>felix_aniver_see_saw</title>
+			<link rel="stylesheet" href="code/style.css" />
+		</head>
 
-<div id="bkgrnd">
+		<body>
+			<h1 id="title">felix_aniver_see_saw</h1>
+			<h2>welcome!</h2>
+			<h2>introducing...my videos</h2>
 
-	<head>
-		<title>felix_aniver_see_saw</title>
-		<link rel="stylesheet" href="code/style.css" />
-		<script type="text/javascript" src="code/script.js"></script>
-	</head>
+			<div class="topnav">
+				<a
+					href="https://www.youtube.com/channel/UCkXep4_jjjfAbeAqZJ5JshA"
+				>
+					<img
+						src="https://yt3.ggpht.com/If04KbLa6wFzf3Rhh7j9rxIHp0aZzWcqCjGoC8lSscXZ6rotiWHrdd2tWrJrbABckPOwfcw8Mw=s176-c-k-c0x00ffffff-no-rj-mo"
+						id="logo"
+						style="border-radius: 50%; width: 15px"
+					/>
+				</a>
+				<a class="active" href="index.html">home</a>
+				<a href="videos.html">videos</a>
+				<a href="about.html">about</a>
+				<a
+					href="https://www.youtube.com/channel/UCkXep4_jjjfAbeAqZJ5JshA?sub_confirmation=1"
+					>subscribe!</a
+				>
+				<a id="time">insert time</a>
+			</div>
 
-	<body>
-		<h1 id='title'>felix_aniver_see_saw</h1>
-		<h2>welcome!</h2>
-		<h2>introducing...my videos</h2>
-
-		<div class="topnav">
-			<a href="https://www.youtube.com/channel/UCkXep4_jjjfAbeAqZJ5JshA">
-				<img src="https://yt3.ggpht.com/If04KbLa6wFzf3Rhh7j9rxIHp0aZzWcqCjGoC8lSscXZ6rotiWHrdd2tWrJrbABckPOwfcw8Mw=s176-c-k-c0x00ffffff-no-rj-mo"
-					id="logo" style="border-radius: 50%; width: 15px;" />
-			</a>
-			<a class="active" href="index.html">home</a>
-			<a href="videos.html">videos</a>
-			<a href="about.html">about</a>
-			<a href="https://www.youtube.com/channel/UCkXep4_jjjfAbeAqZJ5JshA?sub_confirmation=1">subscribe!</a>
-			<a id="time">insert time</a>
-		</div>
-
-		<script>
-			var currentDate = new Date();
-			function addZero(x) {
-				if (x.toString.length === 1) {
-					return ("0" + x.toString);
-				} else {
-					return x.toString;
+			<script>
+				function appendLeadingZeroes(n) {
+					if (n <= 9) {
+						return "0" + n;
+					}
+					return n;
 				}
-			}
-			hours = addZero(currentDate.getHours());
-			minutes = addZero(currentDate.getMinutes());
-			seconds = addZero(currentDate.getSeconds());
-			document.getElementById("time").innerHTML = "last updated: " + currentDate.getDate() + "/"
-				+ (currentDate.getMonth() + 1) + "/"
-				+ currentDate.getFullYear() + " "
-				+ hours + ":"
-				+ minutes + ":"
-				+ seconds;
+
+				let date = new Date();
+				let dateFormat =
+					appendLeadingZeroes(date.getDate()) +
+					"/" +
+					appendLeadingZeroes(date.getMonth() + 1) +
+					"/" +
+					date.getFullYear();
+
+				let timeFormat =
+					appendLeadingZeroes(date.getHours()) +
+					":" +
+					appendLeadingZeroes(date.getMinutes()) +
+					":" +
+					appendLeadingZeroes(date.getSeconds());
+
+				document.getElementById("time").innerHTML =
+					"last updated: " + dateFormat + " @ " + timeFormat;
+			</script>
+
+			<h3>watch my latest video!</h3>
+			<iframe
+				src="https://www.youtube.com/embed/wqJwADqE7Tg"
+				style="border: 0px #ffffff none"
+				name="myiFrame"
+				scrolling="no"
+				frameborder="1"
+				marginheight="0px"
+				marginwidth="0px"
+				allowfullscreen
+				width="100%"
+				height="85%"
+			>
+			</iframe>
+
+			<div></div>
+
+			<h3 class="invisible">[LIMITED!] download the audio!</h3>
+			<audio controls>
+				<source src="media/latest.mp3" type="audio/mpeg" />
+				oofie :( looks like you can't play it...
+			</audio>
+
+			<div></div>
+
+			<h3 class="invisible">check out another of my videos!</h3>
+			<iframe
+				id="myframe"
+				src="https://www.youtube.com/embed/wqJwADqE7Tg"
+				style="border: 0px #ffffff none"
+				name="myiFrame"
+				scrolling="no"
+				frameborder="1"
+				marginheight="0px"
+				marginwidth="0px"
+				allowfullscreen
+				width="100%"
+				height="85%"
+			>
+			</iframe>
+
+			<div></div>
+
+			<footer>
+				<p style="color: white">
+					<u>my mail (theflasankians@gmail.com)</u>
+					<img
+						id="brand"
+						src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png"
+						alt="gmail"
+					/>
+				</p>
+				<a href="https://www.instagram.com/felix_aniver_see_saw/">
+					contact me (insta)
+					<img
+						id="brand"
+						src="https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg"
+						alt="instagram"
+					/>
+				</a>
+			</footer>
+		</body>
+		<script>
+			const videos = [
+				"https://www.youtube.com/embed/HihsrMzi-rU&t=6s",
+				"https://www.youtube.com/embed/8XhO9KF1PcM",
+				"https://www.youtube.com/embed/D1qugoVOE5M",
+			];
+			document.getElementById("myframe").src =
+				videos[Math.floor(Math.random() * 3)];
 		</script>
-
-		<h3>watch my latest video!</h3>
-		<iframe src="https://www.youtube.com/embed/wqJwADqE7Tg" style="border:0px #ffffff none;" name="myiFrame"
-			scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen width=100% height=85%>
-		</iframe>
-
-		<div></div>
-
-		<h3 class="invisible">[LIMITED!] download the audio!</h3>
-		<audio controls>
-			<source src="latest.mp3" type="audio/mpeg" />
-			oofie :( looks like you can't play it...
-		</audio>
-
-		<div></div>
-
-		<h3 class="invisible">check out another of my videos!</h3>
-		<iframe id="myframe" src="https://www.youtube.com/embed/wqJwADqE7Tg" style="border:0px #ffffff none;"
-			name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" allowfullscreen
-			width="100%" height="85%">
-		</iframe>
-
-		<div></div>
-
-		<footer>
-			<a href=https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&su=&to=theflasankians@gmail.com&body=#>
-				contact me (gmail)
-				<img id="brand" src="https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png" alt="gmail" />
-			</a>
-			<br />
-			<a href="https://www.instagram.com/felix_aniver_see_saw/">
-				contact me (insta)
-				<img id="brand"
-					src="https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg"
-					alt="instagram" />
-			</a>
-		</footer>
-	</body>
-	<script type="text/javascript" src="script.js"></script>
-	<script>
-		const videos = ["https://www.youtube.com/embed/HihsrMzi-rU&t=6s", "https://www.youtube.com/embed/8XhO9KF1PcM", "https://www.youtube.com/embed/D1qugoVOE5M"]
-		document.getElementById("myframe").src = videos[Math.floor(Math.random() * 3)];
-	</script>
-
-</div>
-
+	</div>
 </html>
