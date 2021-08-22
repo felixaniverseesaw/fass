@@ -24,33 +24,6 @@
 			<p id="time">insert time</p>
 		</div>
 
-		<script>
-			function appendLeadingZeroes(n) {
-				if (n <= 9) {
-					return "0" + n;
-				}
-				return n;
-			}
-
-			var currentDate = new Date();
-			var dateFormat =
-				appendLeadingZeroes(currentDate.getDate()) +
-				"/" +
-				appendLeadingZeroes(currentDate.getMonth() + 1) +
-				"/" +
-				currentDate.getFullYear();
-
-			var timeFormat =
-				appendLeadingZeroes(currentDate.getHours()) +
-				":" +
-				appendLeadingZeroes(currentDate.getMinutes()) +
-				":" +
-				appendLeadingZeroes(currentDate.getSeconds());
-
-			document.getElementById("time").innerHTML =
-				"last updated: " + dateFormat + " @ " + timeFormat;
-		</script>
-
 		<body>
 			<h1 id="title">felix_aniver_see_saw</h1>
 			<h2>welcome!</h2>
@@ -62,7 +35,7 @@
 				below for more:
 			</h4>
 
-			<br/>
+			<br />
 
 			<h3>piano covers</h3>
 			<iframe
@@ -75,7 +48,7 @@
 				allowfullscreen
 			></iframe>
 
-			<br>
+			<br />
 
 			<h3 class="invisible">crack & misc</h3>
 			<iframe
@@ -89,7 +62,7 @@
 			></iframe>
 		</body>
 
-		<br/>
+		<br />
 
 		<footer>
 			<p style="color: white">
@@ -110,4 +83,6 @@
 			</a>
 		</footer>
 	</div>
+
+	<script src="scripts/date.js"></script>
 </html>
