@@ -8,14 +8,12 @@ var dateFormat =
 	"/" +
 	appendLeadingZeroes(currentDate.getMonth() + 1) +
 	"/" +
-	currentDate.getFullYear();
-
-var timeFormat =
+	currentDate.getFullYear() +
+	" @ " +
 	appendLeadingZeroes(currentDate.getHours()) +
 	":" +
 	appendLeadingZeroes(currentDate.getMinutes()) +
 	":" +
 	appendLeadingZeroes(currentDate.getSeconds());
 
-document.getElementById("time").innerHTML =
-	"last updated: " + dateFormat + " @ " + timeFormat;
+document.getElementById("time").innerHTML = "last updated: " + dateFormat;
