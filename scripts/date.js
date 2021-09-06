@@ -2,8 +2,8 @@ function appendLeadingZeroes(n) {
 	return n <= 9 ? "0" + n : n;
 }
 
-var currentDate = new Date();
-var dateFormat =
+let currentDate = new Date();
+let dateFormat =
 	appendLeadingZeroes(currentDate.getDate()) +
 	"/" +
 	appendLeadingZeroes(currentDate.getMonth() + 1) +
