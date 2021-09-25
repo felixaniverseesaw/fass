@@ -1,3 +1,4 @@
+// append zeros to single-digit values so that they remain consistent with the date format.
 function appendLeadingZeroes(n) {
 	return n <= 9 ? "0" + n : n;
 }
