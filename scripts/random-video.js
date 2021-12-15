@@ -3,4 +3,9 @@ const videos = [
 	'https://www.youtube.com/embed/8XhO9KF1PcM',
 	'https://www.youtube.com/embed/D1qugoVOE5M',
 ]
-document.getElementById('myframe').src = videos[Math.floor(Math.random() * 3)]
+
+// select a video from the array
+const video = videos[Math.floor(Math.random() * videos.length)]
+
+// set the video inside the iframe with id myframe
+document.getElementById('myframe').src = video
