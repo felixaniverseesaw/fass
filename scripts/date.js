@@ -6,7 +6,7 @@ function insertZeroes(n) {
 // Initialises Date object for display.
 let currentDate = new Date()
 
-// Formats the Date object using the apppendLeadingZeroes function.
+// Formats the Date object using the insertZeroes function.
 let formattedDate =
 	insertZeroes(currentDate.getDate()) +
 	'/' +
