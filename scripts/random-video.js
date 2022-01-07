@@ -1,3 +1,4 @@
+// list of videos
 const videos = [
 	'https://www.youtube.com/embed/HihsrMzi-rU&t=6s',
 	'https://www.youtube.com/embed/8XhO9KF1PcM',
