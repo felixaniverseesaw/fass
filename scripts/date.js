@@ -20,5 +20,5 @@ let formattedDate =
 	':' +
 	insertZeroes(currentDate.getSeconds())
 
-// Displays the formatted Date object in the <p></p> object with id "time".
+// Displays the formatted Date object in the paragraph object with id "time".
 document.getElementById('time').innerHTML = 'last updated: ' + formattedDate
